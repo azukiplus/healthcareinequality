@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Add title</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
 </head>
 <body>
 <div id="intro">
   <p>
-    Think medical care in America was equitable? Think again.
+    Thought medical care in America was equitable? Think again.
   </p>
   <button id="intro-btn">
     SEE FOR YOURSELF
@@ -31,16 +35,68 @@
     Can you live like they did?
   </p>
 </div>
+
 <div id="story-selection">
   <p>
-    You have been a laborer in Mexico for your entire life, but heard that the USA is a land of economic equality,
-    significantly higher wages, and better opportunities.
-    You are tired of living in an area of crime and poverty, and want to improve your situation and your children's
-    future opportunity. You take your wife and two young children and travel 400 miles via bus to the US border near
-    San Ysidro, CA.
-    You're not sure what is present in this "land of opportunity," but are excited to see what awaits for
-    you and your children's lives ahead.
+    CHOOSE YOUR STORY
   </p>
+  <section id="story-picker">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="story-choice">
+            <div class="story-content">
+              <img src="story-pencil.png" alt="pencil"/>
+              <p>
+                You have been a laborer in Mexico for your entire life, but heard that the USA is a land of economic
+                equality, significantly higher wages, and better opportunities.
+                <br>
+                <br>
+                You are tired of living in an area of
+                crime and poverty, and want to improve your situation and your children's future opportunity. You
+                take your wife and two young children and travel 400 miles via bus to the US border near San Ysidro, CA.
+                <br>
+                <br>
+                You're not sure what is present in this "land of opportunity," but are excited to see what awaits for
+                you and your children's lives ahead.
+              </p>
+              <button id="hm-path" class="button_click">Choose Story</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="story-choice">
+            <div class="story-content">
+              <img src="story-pencil.png" alt="pencil"/>
+              <p>
+                Other story
+              </p>
+              <button id="bw-path" class="button-click">Choose Story</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    let swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </div>
 <div id="hm1">
   <p>
@@ -397,4 +453,7 @@
   </p>
 </div>
 </body>
+<footer>
+  <a target="_blank" href="https://icons8.com/icon/E49NKoc3zrTt/memo">Memo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</footer>
 </html>
