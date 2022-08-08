@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Add title</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
+  <script src='index.js'></script>
 </head>
 <body>
 <div id="intro">
   <p>
-    Thought medical care in America was equitable? Think again.
+    Think medical care in America was equitable?
+    <br>
+    Think again.
   </p>
   <button id="intro-btn">
     SEE FOR YOURSELF
@@ -41,33 +45,31 @@
     CHOOSE YOUR STORY
   </p>
   <section id="story-picker">
-    <div class="swiper mySwiper">
+    <div class="swiper swiperStory">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="story-choice">
-            <div class="story-content">
-              <img src="story-pencil.png" alt="pencil"/>
-              <p>
-                You have been a laborer in Mexico for your entire life, but heard that the USA is a land of economic
-                equality, significantly higher wages, and better opportunities.
-                <br>
-                <br>
-                You are tired of living in an area of
-                crime and poverty, and want to improve your situation and your children's future opportunity. You
-                take your wife and two young children and travel 400 miles via bus to the US border near San Ysidro, CA.
-                <br>
-                <br>
-                You're not sure what is present in this "land of opportunity," but are excited to see what awaits for
-                you and your children's lives ahead.
-              </p>
-              <button id="hm-path" class="button_click">Choose Story</button>
-            </div>
+          <div class="story-content">
+            <img src="number-one.png" alt="number one"/>
+            <p>
+              You have been a laborer in Mexico for your entire life, but heard that the USA is a land of economic
+              equality, significantly higher wages, and better opportunities.
+              <br>
+              <br>
+              You are tired of living in an area of
+              crime and poverty, and want to improve your situation and your children's future opportunity. You
+              take your wife and two young children and travel 400 miles via bus to the US border near San Ysidro, CA.
+              <br>
+              <br>
+              You're not sure what is present in this "land of opportunity," but are excited to see what awaits for
+              you and your children's lives ahead.
+            </p>
+            <button id="hm-path" class="button_click">Choose Story</button>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="story-choice">
             <div class="story-content">
-              <img src="story-pencil.png" alt="pencil"/>
+              <img src="number-2.png" alt="number two"/>
               <p>
                 Other story
               </p>
@@ -80,7 +82,7 @@
   </section>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>
-    let swiper = new Swiper(".mySwiper", {
+    let swiper = new Swiper(".swiperStory", {
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
@@ -98,6 +100,12 @@
     });
   </script>
 </div>
+
+<div id="navbar">
+  <p>Health:</p>
+  <p>Money:</p>
+</div>
+
 <div id="hm1">
   <p>
     DAY 1: You are able to cross successfully. Now is the start of your new life in America, the land of opportunity!
@@ -112,18 +120,22 @@
     Your job options are limited, especially since you don't have a vehicle. These are currently your most favorite
     job leads:
   </p>
-  <p>
-    Construction laborer at a contracting corporation
-    -10 health, $14/hr
-  </p>
-  <p>
-    Line cook at a Temp catering agency
-    -5 health, $11/hr
-  </p>
-  <p>
-    Tractor operator at a local strawberry field
-    -8 health, $13/hr
-  </p>
+  <section>
+    <div class="swiper swiperJobs">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Construction laborer at a contracting corporation -10 health, $14/hr</div>
+        <div class="swiper-slide">Line cook at a Temp catering agency -5 health, $11/hr</div>
+        <div class="swiper-slide">Tractor operator at a local strawberry field -8 health, $13/hr</div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      let swiper = new Swiper(".swiperJobs", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+  </section>
 </div>
 
 <div id="hm3">
@@ -454,6 +466,5 @@
 </div>
 </body>
 <footer>
-  <a target="_blank" href="https://icons8.com/icon/E49NKoc3zrTt/memo">Memo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 </footer>
 </html>

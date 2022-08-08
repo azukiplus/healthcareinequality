@@ -11,42 +11,142 @@ body {
   padding: 0;
 }
 
-.story-content p {
+#intro p {
+
+}
+
+#story-selection .story-content p {
   margin: 0;
   padding: 0;
   color: #291d2b;
 }
 
-.swiper {
+#story-selection .swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+#story-selection .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 300px;
   height: 500px;
   background-color: #ffce96;
-  box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
   filter: blur(4px);
 }
 
-.swiper-slide-active {
+#story-selection .swiper-slide-active {
   filter: blur(0px);
 }
 
-.story-content {
+#story-selection .story-content {
   position: relative;
   width: 80%;
   padding: 20px 40px 40px 20px;
 }
 
+/*Change to image of person later?*/
 .story-content img {
   position: absolute;
   top: 20px;
   right: 30px;
   opacity: 0.2;
+  width: 30%;
 }
 
+
+/**second swiper **/
+#hm2 html,
+#hm2 body {
+  position: relative;
+  height: 100%;
+}
+
+#hm2 body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+#hm2 body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+#hm2 html,
+#hm2 body {
+  position: relative;
+  height: 100%;
+}
+
+#hm2 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hm2 .swiper {
+  width: 240px;
+  height: 320px;
+}
+
+#hm2 .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#hm2 .swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+#hm2 .swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+#hm2 .swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+/** start button **/
+#intro-btn {
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff7777;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 6px 7px 40px -4px rgba(0, 0, 0, 0.2);
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
