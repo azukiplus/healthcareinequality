@@ -1,5 +1,8 @@
 "use strict";
 (function () {
+  let HEALTH_VAL = -1;
+  let MONEY_VAL = -1;
+
   window.addEventListener('load', init);
 
   /**
