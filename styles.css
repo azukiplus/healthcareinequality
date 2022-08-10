@@ -2,6 +2,10 @@ body {
   background-color: #252525;
   color: #ffffff;
   font-family: "PT Sans", sans-serif;
+  margin: 0 auto;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 0.5%;
 }
 
 button {
@@ -190,4 +194,16 @@ span.ripple {
   to {
     background-position: 200% center;
   }
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
 }
