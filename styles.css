@@ -2,6 +2,7 @@ body {
   background-color: #252525;
   color: #ffffff;
   font-family: "PT Sans", sans-serif;
+  font-size: 20px;
   margin: 0 auto;
   padding-left: 6%;
   padding-right: 6%;
@@ -44,10 +45,9 @@ button {
 #story-selection .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 350px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background-color: #ffffff;
-  border: 5px solid #e63333;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
   filter: blur(4px);
 }
@@ -124,13 +124,15 @@ button {
 
 #hm2 .swiper-slide {
   display: flex;
+  padding: 15px;
   align-items: center;
-  justify-content: center;
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
   color: #252525;
+  box-sizing: border-box;
 }
+
 #hm2 .swiper-slide:nth-child(1n) {
   background-color: #fff;
 }
@@ -156,6 +158,7 @@ button {
   position: relative;
   overflow: hidden;
   box-shadow: 6px 7px 40px -4px rgba(0, 0, 0, 0.2);
+  font-family: "PT Sans", sans-serif;
 }
 
 span.ripple {
@@ -206,4 +209,30 @@ span.ripple {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 2s, opacity 2s linear;
+}
+
+mark.red {
+  color: #e63333;
+  background: none;
+}
+
+mark.red-highlight {
+  color: #ffffff;
+  background: #e63333;
+}
+
+.container {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.container hr {
+  width: 100%;
+}
+
+hr {
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  border: 0;
 }

@@ -3,14 +3,14 @@
   let HEALTH_VAL = -1;
   let MONEY_VAL = -1;
 
+
   window.addEventListener('load', init);
 
   /**
    * Initial functions
    */
   function init() {
-    let start = document.getElementById("intro-btn");
-    start.addEventListener("click", createRipple);
+    document.getElementById("intro-btn").addEventListener("click", createRipple);
   }
 
   function createRipple(event) {
