@@ -11,6 +11,7 @@
    */
   function init() {
     document.getElementById("intro-btn").addEventListener("click", createRipple);
+    document.getElementById("intro-btn").addEventListener("click", showOpening);
   }
 
   function createRipple(event) {
@@ -27,6 +28,52 @@
       ripple.remove();
     }
     button.appendChild(circle);
+  }
+
+  function showOpening() {
+    document.getElementById("intro").classList.add("fadeOut");
+    document.getElementById("choose-story-button").classList.remove("hidden");
+    setTimeout(function () {
+      showOpeningZero();
+    }, 500);
+  }
+
+  function showOpeningZero() {
+    document.getElementById("intro").classList.add("hidden");
+    document.getElementById("opening-0").classList.remove("hidden");
+    document.getElementById("opening-0").classList.add("fadeIn");
+    setTimeout(function () {
+      showOpeningOne();
+    }, 2000);
+  }
+
+  function showOpeningOne() {
+    document.getElementById("opening-1").classList.remove("hidden");
+    document.getElementById("opening-1").classList.add("fadeIn");
+    setTimeout(function () {
+      showOpeningTwo();
+    }, 2000);
+  }
+
+  function showOpeningTwo() {
+    document.getElementById("opening-2").classList.remove("hidden");
+    document.getElementById("opening-2").classList.add("fadeIn");
+    setTimeout(function () {
+      showOpeningThree();
+    }, 2000);
+
+    function showOpeningThree() {
+      document.getElementById("opening-3").classList.remove("hidden");
+      document.getElementById("opening-3").classList.add("fadeIn");
+      setTimeout(function () {
+        showOpeningFour();
+      }, 2000);
+    }
+
+    function showOpeningFour() {
+      document.getElementById("opening-4").classList.remove("hidden");
+      document.getElementById("opening-4").classList.add("fadeIn");
+    }
   }
 
 })();
