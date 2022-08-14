@@ -80,6 +80,12 @@ button {
   pointer-events: none
 }
 
+#opening {
+  font-family: Oswald, serif;
+  font-size: 26px;
+  text-align: center;
+}
+
 /**second swiper **/
 #hm2 html,
 #hm2 body {
@@ -269,6 +275,7 @@ hr {
 
 #choose-story-button {
   position: absolute;
+  font-family: "PT Sans", sans-serif;
   bottom: 20%;
-  right: 50%;
+  right: 20%;
 }

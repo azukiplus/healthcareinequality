@@ -74,6 +74,7 @@
       document.getElementById("opening-4").classList.remove("hidden");
       document.getElementById("opening-4").classList.add("fadeIn");
     }
+
   }
 
 })();
