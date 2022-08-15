@@ -274,8 +274,12 @@ hr {
 }
 
 #choose-story-button {
-  position: absolute;
   font-family: "PT Sans", sans-serif;
-  bottom: 20%;
-  right: 20%;
+  color: #eeeeee;
+}
+
+.text-btn {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 }
