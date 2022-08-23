@@ -12,6 +12,7 @@
   function init() {
     document.getElementById("intro-btn").addEventListener("click", createRipple);
     document.getElementById("intro-btn").addEventListener("click", showOpening);
+    document.getElementById("choose-story-button").addEventListener("click", chooseYourStory);
   }
 
   function createRipple(event) {
@@ -74,7 +75,12 @@
       document.getElementById("opening-4").classList.remove("hidden");
       document.getElementById("opening-4").classList.add("fadeIn");
     }
+  }
 
+  function chooseYourStory() {
+    document.getElementById("opening").classList.add("hidden");
+    document.getElementById("navbar").classList.remove("hidden");
+    document.getElementById("story-selection").classList.remove("hidden");
   }
 
 })();
