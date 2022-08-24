@@ -33,8 +33,9 @@
   }
 
   function showOpening() {
+    document.getElementById("opening").classList.remove("hidden");
     document.getElementById("intro").classList.add("fadeOut");
-    document.getElementById("choose-story-button").classList.remove("hidden");
+    // document.getElementById("choose-story-button").classList.remove("hidden");
     setTimeout(function () {
       showOpeningZero();
     }, 500);
