@@ -13,6 +13,7 @@
     document.getElementById("intro-btn").addEventListener("click", createRipple);
     document.getElementById("intro-btn").addEventListener("click", showOpening);
     document.getElementById("choose-story-button").addEventListener("click", chooseYourStory);
+    document.getElementById("hm-path").addEventListener("click", hispanicMaleStory);
   }
 
   function createRipple(event) {
@@ -81,6 +82,16 @@
     document.getElementById("opening").classList.add("hidden");
     document.getElementById("navbar").classList.remove("hidden");
     document.getElementById("story-selection").classList.remove("hidden");
+  }
+
+  function hispanicMaleStory() {
+    document.getElementById("story-selection").classList.add("hidden");
+    document.getElementById("hm1").classList.remove("hidden");
+  }
+
+  function showHm2() {
+    document.getElementById("hm1").classList.add("hidden");
+    document.getElementById("hm2").classList.remove("hidden");
   }
 
 })();

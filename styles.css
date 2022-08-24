@@ -4,8 +4,8 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   margin: 0 auto;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-top: 0.5%;
 }
 
@@ -282,4 +282,11 @@ hr {
   border: none;
   background-color: inherit;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  *, html, body, .row {
+    padding-left: 6px  !important;
+    padding-right: 6px  !important;
+  }
 }
