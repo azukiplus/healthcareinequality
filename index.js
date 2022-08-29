@@ -83,6 +83,8 @@
     document.getElementById("opening").classList.add("hidden");
     document.getElementById("navbar").classList.remove("hidden");
     document.getElementById("story-selection").classList.remove("hidden");
+    document.getElementById("story-selection").classList.add("fadeIn");
+    document.getElementById("nav-bar").classList.add("fadeIn");
   }
 
   function hispanicMaleStory() {

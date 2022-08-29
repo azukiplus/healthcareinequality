@@ -276,6 +276,10 @@ hr {
 #choose-story-button {
   font-family: "PT Sans", sans-serif;
   color: #eeeeee;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .text-btn {
