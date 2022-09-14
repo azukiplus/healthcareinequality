@@ -100,8 +100,9 @@ button {
 
 #opening {
   font-family: Oswald, serif;
-  font-size: 26px;
+  font-size: 40px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /**second swiper **/
@@ -180,7 +181,7 @@ button {
 }
 
 #intro-btn:hover {
-  color: white;
+  color: #CAEBF2;
   transition: color 0.5s ease-in-out;
 }
 
