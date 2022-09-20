@@ -8,15 +8,14 @@
   url('alternate_gothic_no3_d_regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 body {
-  background-color: #252525;
+  background-color: #212227;
   color: #ffffff;
   text-align: center;
   font-family: alternate_gothic_no3_dregular, serif;
-  font-size: 20px;
+  font-size: 35px;
   margin: 0 auto;
   padding-left: 20%;
   padding-right: 20%;
@@ -172,17 +171,27 @@ button {
 
 /** start button **/
 #intro-btn {
-  background:none;
+  /*background:none;*/
+  background-color:#e63333;
+  border-radius: 10px;
+  padding: 10px;
   border:none;
   cursor: pointer;
   font-family: inherit;
-  color: #e63333;
+  color: #212227;
   font-size: 60px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 #intro-btn:hover {
-  color: #CAEBF2;
-  transition: color 0.5s ease-in-out;
+  box-shadow:0 0 40px #e63333;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 span.ripple {
