@@ -18,9 +18,9 @@
   function showOpening() {
     document.getElementById("opening").classList.remove("hidden");
     document.getElementById("intro").classList.add("fadeOut");
-    // document.getElementById("choose-story-button").classList.remove("hidden");
     setTimeout(function () {
       showOpeningZero();
+      document.getElementById("choose-story-button").classList.remove("hidden");
     }, 500);
   }
 
@@ -34,6 +34,7 @@
   }
 
   function showOpeningOne() {
+    document.getElementById("opening-0").classList.add("hidden");
     document.getElementById("opening-1").classList.remove("hidden");
     document.getElementById("opening-1").classList.add("fadeIn");
     setTimeout(function () {
@@ -42,6 +43,7 @@
   }
 
   function showOpeningTwo() {
+    document.getElementById("opening-1").classList.add("hidden");
     document.getElementById("opening-2").classList.remove("hidden");
     document.getElementById("opening-2").classList.add("fadeIn");
     setTimeout(function () {
@@ -49,6 +51,7 @@
     }, 2000);
 
     function showOpeningThree() {
+      document.getElementById("opening-2").classList.add("hidden");
       document.getElementById("opening-3").classList.remove("hidden");
       document.getElementById("opening-3").classList.add("fadeIn");
       setTimeout(function () {
@@ -57,6 +60,7 @@
     }
 
     function showOpeningFour() {
+      document.getElementById("opening-3").classList.add("hidden");
       document.getElementById("opening-4").classList.remove("hidden");
       document.getElementById("opening-4").classList.add("fadeIn");
     }
@@ -64,10 +68,8 @@
 
   function chooseYourStory() {
     document.getElementById("opening").classList.add("hidden");
-    document.getElementById("navbar").classList.remove("hidden");
     document.getElementById("story-selection").classList.remove("hidden");
     document.getElementById("story-selection").classList.add("fadeIn");
-    document.getElementById("nav-bar").classList.add("fadeIn");
   }
 
   function hispanicMaleStory() {
@@ -76,6 +78,8 @@
   }
 
   function showHm2() {
+    document.getElementById("navbar").classList.remove("hidden");
+    document.getElementById("nav-bar").classList.add("fadeIn");
     document.getElementById("hm1").classList.add("hidden");
     document.getElementById("hm2").classList.remove("hidden");
   }

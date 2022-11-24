@@ -11,8 +11,8 @@
 }
 
 body {
-  background-color: #212227;
-  color: #ffffff;
+  background-color: #151a1e;
+  color: #dbd1b7;
   text-align: center;
   font-family: alternate_gothic_no3_dregular, serif;
   font-size: 35px;
@@ -98,8 +98,7 @@ button {
 }
 
 #opening {
-  font-family: Oswald, serif;
-  font-size: 40px;
+  font-size: 56px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -172,7 +171,7 @@ button {
 /** start button **/
 #intro-btn {
   /*background:none;*/
-  background-color:#e63333;
+  background-color: #ce4415;
   border-radius: 10px;
   padding: 10px;
   border:none;
@@ -194,42 +193,8 @@ button {
   transition: all 0.2s ease-in;
 }
 
-span.ripple {
-  position: absolute;
-  border-radius: 50%;
-  transform: scale(0);
-  animation: ripple 600ms linear;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-@keyframes ripple {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
-}
-
-.animate-character {
-  font-weight: 900;
-  background-image: linear-gradient(
-          -225deg,
-          #e63333 0%,
-          #e63333 29%,
-          #fff 30%,
-          #e63333 100%
-  );
-  background-size: 200% auto;
-  color: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  font-size: 190px;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
+#think-again {
+  font-size: 60px;
 }
 
 .visible {
@@ -239,17 +204,17 @@ span.ripple {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 mark.red {
-  color: #e63333;
+  color: #ce4415;
   background: none;
 }
 
 mark.red-highlight {
   color: #ffffff;
-  background: #e63333;
+  background: #ce4415;
 }
 
 .container {
@@ -297,12 +262,17 @@ hr {
 }
 
 .center-container {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
 
 #choose-story-button {
-  font-family: "PT Sans", sans-serif;
-  color: #eeeeee;
+  font-family: alternate_gothic_no3_dregular, serif;
+  font-size: 24px;
+  color: #ce4415;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -320,4 +290,36 @@ hr {
     padding-left: 6px  !important;
     padding-right: 6px  !important;
   }
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline;
+}
+
+.title {
+  cursor: default;
+  left: calc(75px + 1%);
+  left: -webkit-calc(75px + 1%);
+  text-align: left;
+  top: 0;
+  max-width: 200px;
+  min-width: 100px;
+  width: 10%;
+}
+
+#balance-meter, #health-meter {
+  cursor: default;
+  left: calc(75px + 1%);
+  left: -webkit-calc(75px + 1%);
+  text-align: left;
+  top: 0;
+  max-width: 200px;
+  min-width: 100px;
+  width: 10%;
 }

@@ -15,8 +15,6 @@
 <div id="intro" class="visible">
   <p>
     Think medical care in America was equitable?
-  </p>
-  <p class="animate-character">
     Think again.
   </p>
   <br>
@@ -43,27 +41,42 @@
     <p id="opening-4" class="hidden">
       Can you live like they did?
     </p>
-    <button id="choose-story-button" class="hidden, text-btn">
+    <button id="choose-story-button" class="text-btn hidden ">
       CHOOSE YOUR STORY
     </button>
   </div>
 </div>
 
 <div id="navbar" class="hidden">
-  <p>Health:</p>
-  <p>Money:</p>
+  <div id="balance-meter" style="top:0px">
+    <div class="title">
+      BALANCE
+    </div>
+    <span class="dollar-sign">$</span>
+    <span class="digits">1,000</span>
+  </div>
+  <div id="health-meter" style="top:0px">
+    <div class="title">
+      HEALTH
+    </div>
+    <span class="dollar-sign">Vitality</span>
+    <span class="digits">1,000</span>
+  </div>
 </div>
 
 <div id="story-selection" class="hidden">
+  <p>
+    CHOOSE YOUR STORY
+  </p>
   <section id="story-picker">
     <div class="swiper swiperStory">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="story-content">
             <p>
-              Story #1: name
+              Hispanic male storyline
             </p>
-            <button id="hm-path" class="button_click">Choose Story</button>
+            <button id="hm-path">Choose Story</button>
           </div>
         </div>
         <div class="swiper-slide">
@@ -72,7 +85,7 @@
               <p>
                 Story #2: name
               </p>
-              <button id="bw-path" class="button-click">Choose Story</button>
+              <button id="bw-path">Choose Story</button>
             </div>
           </div>
         </div>
@@ -155,10 +168,14 @@
 
 <div id="hm3" class="hidden">
   <p>
-    Unfortunately, Latino immigrants have limited job access in the USA. Statistically, <mark class="red">construction</mark>
-    is the most common profession pursued by Latino immigrants followed by <mark class="red">farming & hospitality</mark>
+    Unfortunately, Latino immigrants have limited job access in the USA. Statistically,
+    <mark class="red">construction</mark>
+    is the most common profession pursued by Latino immigrants followed by
+    <mark class="red">farming & hospitality</mark>
     services. As of 2018, only 26% of Latino immigrants had a Bachelor's degree or more education.
-    Additionally, those with <mark class="red">Hispanic accents</mark> are less likely to be hired for entry-level
+    Additionally, those with
+    <mark class="red">Hispanic accents</mark>
+    are less likely to be hired for entry-level
     positions and are less desirable for managerial promotions.
   </p>
 </div>
